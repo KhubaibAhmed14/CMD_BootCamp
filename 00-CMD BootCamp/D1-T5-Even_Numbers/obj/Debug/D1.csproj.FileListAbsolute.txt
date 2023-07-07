@@ -1,0 +1,8 @@
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\bin\Debug\D1-T5-Even_Numbers.exe.config
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\bin\Debug\D1-T5-Even_Numbers.exe
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\bin\Debug\D1-T5-Even_Numbers.pdb
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\obj\Debug\D1.csproj.AssemblyReference.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\obj\Debug\D1.csproj.SuggestedBindingRedirects.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\obj\Debug\D1.csproj.CoreCompileInputs.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\obj\Debug\D1-T5-Even_Numbers.exe
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\D1-T5-Even_Numbers\obj\Debug\D1-T5-Even_Numbers.pdb

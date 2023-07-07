@@ -1,0 +1,8 @@
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\bin\Debug\A1-S3.exe.config
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\bin\Debug\A1-S3.exe
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\bin\Debug\A1-S3.pdb
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\obj\Debug\A1-S3.csproj.AssemblyReference.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\obj\Debug\A1-S3.csproj.SuggestedBindingRedirects.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\obj\Debug\A1-S3.csproj.CoreCompileInputs.cache
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\obj\Debug\A1-S3.exe
+D:\Other Topics\Notebooks&Sourcecode\00-CMD BootCamp\A1-S3\obj\Debug\A1-S3.pdb
