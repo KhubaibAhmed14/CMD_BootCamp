@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bird Lovers</title>
+    <link rel="stylesheet" href="Assignment-01.css">
   </head>
 
   <body>
@@ -15,6 +16,9 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#home">Wiki</a></li>
+          <li><a href="#home">News</a></li>
+          <li><a href="#home">Forums</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -22,8 +26,8 @@
     </header>
 
     <!-- Section for Introduction to Birds -->
-    <section>
-      <h2>1: Introduction to Birds</h2>
+    <section class="sec">
+      <h2>Introduction to Birds</h2>
       <p>
         Birds are a group of warm-blooded vertebrates constituting the class
         Aves, characterised by feathers, toothless beaked jaws, the laying of
@@ -33,26 +37,41 @@
     </section>
 
     <!-- Section for Common Birds Species -->
-    <section>
-      <h2>2: Common Birds Species</h2>
+    <section class="sec">
+      <h2>Common Birds Species</h2>
       <p>
         There are numerous common types of birds found around the world. Here are a few examples of well-known bird species:<br>
         <!-- Ordered list with bird species and their images -->
         <ol>
-            <li><b>American Robin (Turdus migratorius):</b> Known for its reddish-orange breast, the American Robin is a migratory songbird found throughout North America.
-            <img class="images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Turdus-migratorius-002.jpg/640px-Turdus-migratorius-002.jpg"></li>
-            <li><b>Hummingbird:</b>There are various species of hummingbirds, known for their small size, iridescent feathers, and ability to hover in mid-air. They are found in the Americas.
-            <img class="images" src="https://images.immediate.co.uk/production/volatile/sites/23/2019/01/GettyImages-480896680-91ed176.jpg"></li>
-            <li><b>Sparrows:</b>Sparrows are a diverse group of small passerine birds found globally. They come in various species and are known for their small size, chirping songs, and adaptability to urban environments.
-            <img class="images" src="https://t3.ftcdn.net/jpg/05/54/36/72/360_F_554367287_4HNoobM6ih46QB7cSpYO2Y9z6CeZeNQq.jpg"></li>
+            <li><b>American Robin (Turdus migratorius):</b> Known for its reddish-orange breast, the American Robin is a migratory songbird found throughout North America.</li>
+            <li><b>Hummingbird:</b>There are various species of hummingbirds, known for their small size, iridescent feathers, and ability to hover in mid-air. They are found in the Americas.</li>
+            <li><b>Sparrows:</b>Sparrows are a diverse group of small passerine birds found globally. They come in various species and are known for their small size, chirping songs, and adaptability to urban environments.</li>
         </ol>
+
+        <div id="birds-gallery">
+          <div class="bird-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Turdus-migratorius-002.jpg/640px-Turdus-migratorius-002.jpg" width="400" height="200">
+            <div class="desc"><b>American Robin (Turdus migratorius)</b></div>
+          </div>
+    
+          <div class="bird-image">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/23/2019/01/GettyImages-480896680-91ed176.jpg" width="400" height="200">
+            <div class="desc"><b>Hummingbird</b></div>
+          </div>
+    
+          <div class="bird-image">
+          <img src="https://t3.ftcdn.net/jpg/05/54/36/72/360_F_554367287_4HNoobM6ih46QB7cSpYO2Y9z6CeZeNQq.jpg" width="400" height="200">
+          <div class="desc"><b>Sparrows</b></div>
+          </div>
+        </div>
+
         These are just a few examples of common bird species, and there are countless others with diverse characteristics, habitats, and behaviors. Birdwatching and learning about different bird species can be a fascinating and enjoyable activity for nature enthusiasts.
       </p>
     </section>
 
     <!-- Section for Bird Watching Tips -->
-    <section>
-      <h2>3: Bird Watching Tips</h2>
+    <section class="sec">
+      <h2>Bird Watching Tips</h2>
       <p>
         Birdwatching, also known as birding, is a popular hobby that allows individuals to observe and appreciate birds in their natural habitats. Whether you're a beginner or an experienced birdwatcher, here are some tips to enhance your birdwatching experience:
         <!-- Unordered list with birdwatching tips -->
@@ -76,7 +95,7 @@
     <table>
       <!-- Caption for the table -->
       <caption>
-        Bird Species Comparison
+        <h2>Bird Species Comparison</h2>
       </caption>
       <!-- Table header row -->
       <tr>
@@ -105,12 +124,16 @@
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required />
 
-      <!-- Radio buttons for Gender -->
-      <label>Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" required />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female" required />
-      <label for="female">Female</label>
+      <div class="Radio">
+        <!-- Radio buttons for Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+      </div>
+
+
 
       <!-- Checkbox for Liked our Birds Lovers page -->
       <label for="Liked">Liked our Birds Lovers page:</label>
