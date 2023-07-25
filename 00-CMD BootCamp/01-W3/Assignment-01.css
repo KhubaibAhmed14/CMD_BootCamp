@@ -17,7 +17,7 @@ nav ul{
     margin-right: 30px;
     padding: 1px 2px;
     background-color: #f0e6e6;
-    border-radius: 5%;
+    border-radius: 0%;
 }
 .sec li{
     margin-bottom: 10px;
@@ -34,19 +34,17 @@ nav a{
     float: left;
     padding: 14px 16px;
     border-radius: 10%;
-    /* margin: 10px; */
-    /* text-align: center; */
-
 }
-nav a:hover{
+/* nav a:hover{
     background-color: rgb(216, 202, 183);
     color: black;
-}
+} */
 
 #birds-gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* padding-bottom: 50px; */
     /* flex-wrap: wrap; */
     /* border: 1px solid mediumaquamarine; */
     /* flex-wrap: nowrap; */
@@ -60,6 +58,10 @@ nav a:hover{
 .desc{
     text-align: center;
     padding: 15px;
+}
+.switchButton{
+    text-align: center;
+    margin-bottom: 5px;
 }
 .bird-image:hover{
     border: 1px solid black;

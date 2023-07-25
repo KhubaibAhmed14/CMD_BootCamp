@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bird Lovers</title>
     <link rel="stylesheet" href="Assignment-01.css">
+    <script src="Assignment-01.js"></script>
   </head>
 
   <body>
@@ -52,16 +53,19 @@
           <div class="bird-image">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Turdus-migratorius-002.jpg/640px-Turdus-migratorius-002.jpg" width="400" height="200">
             <div class="desc"><b>American Robin (Turdus migratorius)</b></div>
+            <div class="switchButton"><button class="sB">Switch</button></div>
           </div>
     
           <div class="bird-image">
             <img src="https://images.immediate.co.uk/production/volatile/sites/23/2019/01/GettyImages-480896680-91ed176.jpg" width="400" height="200">
             <div class="desc"><b>Hummingbird</b></div>
+            <div class="switchButton"><button class="sB">Switch</button></div>
           </div>
     
           <div class="bird-image">
           <img src="https://t3.ftcdn.net/jpg/05/54/36/72/360_F_554367287_4HNoobM6ih46QB7cSpYO2Y9z6CeZeNQq.jpg" width="400" height="200">
           <div class="desc"><b>Sparrows</b></div>
+          <div class="switchButton"><button class="sB">Switch</button></div>
           </div>
         </div>
 
@@ -102,18 +106,22 @@
         <th>Species</th>
         <th>Habitat</th>
         <th>Food</th>
+        <th>Weight</th>
       </tr>
       <!-- Table data rows -->
       <tr>
         <td>Robin</td>
         <td>Woodlands</td>
         <td>Worms, Berries</td>
+        <td>15.0</td>
       </tr>
       <tr>
         <td>Hummingbird</td>
         <td>Gardens</td>
-        <td>Nectar, Insects</td>
+        <td>Worms, Berries</td>
+        <td>16.0</td>
       </tr>
+      <button id="add-row-button">Add Bird</button>
     </table>
 
     <!-- Form for collecting user information -->

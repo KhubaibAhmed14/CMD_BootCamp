@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Content Loading</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      /* CSS for blog posts */
+      .post {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: rgb(253, 234, 211);
+      }
+
+      .postTitle {
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline wavy tan;
+      }
+
+      .postBody {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Blog Post Forum</h1>
+
+    <!-- Content for initial blog posts -->
+    <div id="blogPosts">
+      <div class="post">
+        <div class="postTitle"><h3>Post 1</h3></div>
+        <div class="postBody">Body of Post 1.</div>
+      </div>
+      <div class="post">
+        <div class="postTitle"><h3>Post 2</h3></div>
+        <div class="postBody">Body of Post 2.</div>
+      </div>
+      <div class="post">
+        <div class="postTitle"><h3>Post 3</h3></div>
+        <div class="postBody">Body of Post 3.</div>
+      </div>
+    </div>
+
+    <button id="loadMoreButton">Load More</button>
+
+    <script>
+      $(document).ready(function () {
+        const postsPerPage = 5;
+
+        $("#loadMoreButton").click(function () {
+          // AJAX request to fetch blog posts from the server
+          $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts",
+            method: "GET",
+            dataType: "json",
+            data: {
+              _limit: postsPerPage,
+            },
+            success: function (data) {
+              // console.dir(data)
+              for (let post of data) {
+                // $("#blogPosts").append($('<h2>').text($(post).attr('title')))
+                // $("#blogPosts").append($(post).attr('body'))
+                // if($(post).attr('id')%5 === 0) break;
+
+                const blogpost = `
+                                <div class="post">
+                                    <div class="postTitle"><h3>${post.title}</h3></div>
+                                    <div class="postBodyy">${post.body}</div>
+                                </div>
+                            `;
+                $("#blogPosts").append(blogpost);
+              }
+            },
+            error: function (error) {
+              console.log("Error fetching blog posts:", error);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
